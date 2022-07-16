@@ -6,7 +6,7 @@ layout: mylayout.njk
 
 **Black Lives Matter.** [Support the Equal Justice Initiative.](https://support.eji.org/give/153413/#!/donation/checkout)
 
-I work as a Senior UX Engineer at Regions Bank. Currently, I'm developing UIs for the bank's websites, consulting on front-end systems architecture, and implementing an enterprise-wide design system.
+I work as a Principal UX Engineer at Monster, focusing on design systems and front-end architecture.
 
 I enjoy writing modern CSS and designing accessible HTML patterns. I believe that design is a team sport, and I love working with designers, content strategists, researchers, and architects.
 
