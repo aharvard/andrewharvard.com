@@ -24,6 +24,6 @@
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "prettier": "^2.0.5",
-    "terser": "^4.7.0"
+    "terser": "^4.8.1"
   }
 }
