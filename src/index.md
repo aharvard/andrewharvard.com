@@ -8,7 +8,7 @@ layout: mylayout.njk
 
 I work at Monster as a Principal UX Engineer, focusing on design systems, prototyping, and front-end architecture. 
 
-I'm happiest working at the intersection of design and engineering while collaborating on a cross-functional team. I enjoy designing in Figma, writing modern CSS, crafting accessible HTML, and coding in TypeScript. Occaisionally, I tinker around on CodePen, check out [some of my pens](https://codepen.io/aharvard)! 
+I'm happiest working at the intersection of design and engineering while collaborating on a cross-functional team. I enjoy designing in Figma, writing modern CSS, crafting accessible HTML, and coding in TypeScript. Occasionally, I tinker around on CodePen; check out [some of my pens](https://codepen.io/aharvard)! 
 
 In 2011, I started my career in UX as a generalist designer. Since 2015, I've specialized in design systems and front-end development.
 
