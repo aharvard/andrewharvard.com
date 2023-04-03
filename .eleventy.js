@@ -10,8 +10,10 @@ module.exports = function (eleventyConfig) {
   });
 
   // Returns work items, sorted by display order
-  eleventyConfig.addCollection('work', collection => {
-    return sortByDisplayOrder(collection.getFilteredByGlob('./src/work/*.md'));
+  eleventyConfig.addCollection('portfolio', collection => {
+    return sortByDisplayOrder(
+      collection.getFilteredByGlob('./src/portfolio/*.md'),
+    );
   });
 
   eleventyConfig.addFilter('jsmin', function (code) {
