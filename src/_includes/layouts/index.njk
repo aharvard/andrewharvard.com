@@ -1,0 +1,6 @@
+{% extends "./base.njk" %}
+
+{% block content %}
+  {{ content | safe }}
+  {% include "paritals/my-recent-project.njk" %}
+{% endblock %}

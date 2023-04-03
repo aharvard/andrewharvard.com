@@ -1,4 +1,0 @@
-[Sun Dec 28 2014 21:58:48 GMT-0500 (EST)] Layer "11@2x.jpg": Duplicate path: 11@2x.jpg
-[Sun Dec 28 2014 21:58:48 GMT-0500 (EST)] Layer "11.jpg": Duplicate path: 11.jpg
-[Sun Dec 28 2014 21:58:48 GMT-0500 (EST)] Layer "12@2x.jpg": Duplicate path: 12@2x.jpg
-[Sun Dec 28 2014 21:58:48 GMT-0500 (EST)] Layer "12.jpg": Duplicate path: 12.jpg

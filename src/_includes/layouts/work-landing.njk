@@ -1,0 +1,19 @@
+{% extends "./base.njk" %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+
+{% block content %}
+
+  <h1>{{ title }}</h1>
+
+  <div class="work-landing">
+    {% for item in collections.work %}
+      <div class="work-landing__thumbnail">
+        <a href="{{ item.url }}" class="work-landing__thumbnail-link" aria-label="{{ item.data.title }}">
+          <img class="work-landing__thumbnail-img" src="{{ item.data.thumbnail.image }}" alt="{{ item.data.thumbnail.imageAlt }}"/></a>
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

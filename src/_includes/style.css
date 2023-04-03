@@ -10,7 +10,7 @@ html {
   --gray-800: #424242;
   --gray-900: #212121;
   --black: #111;
-  --site-width: 700px;
+  --site-width: 1400px;
 }
 
 body.light {
@@ -78,6 +78,7 @@ footer {
 footer p {
   font-size: 12px;
 }
+
 .button,
 button {
   background: var(--button-color);
@@ -105,6 +106,9 @@ a {
 a:hover,
 a:focus {
   color: var(--interactive-text-hover-color);
+}
+
+.about {
 }
 
 a.button {
@@ -183,4 +187,42 @@ a.button {
 .recent-project__cta {
   font-weight: 600;
   margin-bottom: 0;
+}
+
+.work-landing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  gap: 30px;
+}
+
+.work-landing__thumbnail {
+  outline: 1px solid red;
+  overflow: hidden;
+}
+
+.work-landing__thumbnail-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.work-landing__thumbnail-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.work-item {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.work-item img {
+  width: 100%;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
 }
