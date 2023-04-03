@@ -1,5 +1,5 @@
 ---
-title: 'Work Samples'
+title: 'Portfolio'
 layout: 'layouts/work-landing.njk'
 ---
 

@@ -1,6 +1,13 @@
+{% if page.url !== '/' %}
+  {% set active = "--active" %}
+{% endif %}
+
 <header class="header">
-  <a href="/">Andrew Harvard</a>
+  {# If on the home page #}
+  {% if page.url !== '/' %}
+    <a href="/" class="header-link">Andrew Harvard</a>
+  {% endif %}
   <nav>
-    <a href="/work">My Work</a>
+    <a href="/portfolio" class="header-link{{active}}">Portfolio</a>
   </nav>
 </header>

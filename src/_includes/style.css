@@ -73,6 +73,7 @@ p {
 
 footer {
   margin-top: 50px;
+  text-align: center;
 }
 
 footer p {
@@ -114,17 +115,44 @@ a:focus {
   align-items: center;
 }
 
+nav {
+  margin-left: auto;
+}
+
+.header-link,
+.header-link--active {
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.header-link--active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+}
+
 .about {
+  max-width: 700px;
+  margin: auto;
 }
 
 a.button {
   text-decoration: none;
 }
 
+.recent-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.recent-projects article:first-of-type {
+  grid-column: 1 / -1;
+}
+
 .recent-project {
   border: 2px solid currentColor;
   border-radius: 10px;
-  margin: 50px 0;
   position: relative;
   background: var(--background-color);
   padding: 24px 30px;
@@ -154,7 +182,7 @@ a.button {
   z-index: -1;
   border-radius: inherit;
   transition: inherit;
-  transform: translateX(15px) translateY(15px);
+  transform: translateX(5px) translateY(5px);
 }
 
 .recent-project:focus::after,
