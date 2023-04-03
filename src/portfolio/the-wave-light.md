@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/work-item.njk'
 title: 'The Wave Light'
-date: 2010-09-23
+date: 2010-12-23
 displayOrder: 1
 thumbnail:
   image: '/img/the-wave-light/01@2x.jpg'

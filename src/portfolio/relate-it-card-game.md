@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/work-item.njk'
 title: 'Relate It Card Game'
-date: 2014-12-01
+date: 2009-12-01
 displayOrder: 1
 thumbnail:
   image: '/img/relate-it-assets/01@2x.jpg'
