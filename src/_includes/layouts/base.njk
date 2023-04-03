@@ -12,7 +12,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name={{description}}/>
-    <link rel="shortcut icon" href="img/h-favicon.ico"/>
+    <link rel="shortcut icon" href="/img/h-favicon.ico"/>
     <title>{{title}}</title>
     <style>
       {{css | cssmin | safe}}
@@ -20,11 +20,13 @@
     <title>{{ title }}</title>
   </head>
   <body>
+    {% include "paritals/header.njk" %}
     <main>
       {% block content %}{% endblock %}
     </main>
     <footer>
       <p>This website is built with 11ty and hosted on Netlify. &#169; <span id="footer-date">0000</span> Andrew Harvard.</p>
+      <button class="theme-switch">Go ...</button>
     </footer>
     <script>
       {{ js | jsmin | safe }}

@@ -1,6 +1,6 @@
 ---
 layout: 'layouts/work-item.njk'
-title: 'Intuitive Voting'
+title: 'Intuitive Voting App'
 date: 2014-11-17
 displayOrder: 1
 thumbnail:

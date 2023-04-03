@@ -1,6 +1,6 @@
 ---
 layout: 'layouts/work-item.njk'
-title: 'Simpeo UX Engineering'
+title: 'Simpeo Components'
 date: 2019-11-01
 displayOrder: 1
 thumbnail:

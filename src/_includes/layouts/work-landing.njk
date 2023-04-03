@@ -10,8 +10,10 @@
   <div class="work-landing">
     {% for item in collections.work %}
       <div class="work-landing__thumbnail">
+        <h2 class="work-landing__thumbnail-title">{{ item.data.title }}</h2>
         <a href="{{ item.url }}" class="work-landing__thumbnail-link" aria-label="{{ item.data.title }}">
-          <img class="work-landing__thumbnail-img" src="{{ item.data.thumbnail.image }}" alt="{{ item.data.thumbnail.imageAlt }}"/></a>
+          <img class="work-landing__thumbnail-img" src="{{ item.data.thumbnail.image }}" alt="{{ item.data.thumbnail.imageAlt }}"/>
+        </a>
       </div>
     {% endfor %}
   </div>
