@@ -19,14 +19,14 @@
     </style>
     <title>{{ title }}</title>
   </head>
-  <body>
+  <body class="light">
     {% include "paritals/header.njk" %}
     <main>
       {% block content %}{% endblock %}
     </main>
     <footer>
-      <p>This website is built with 11ty and hosted on Netlify. &#169; <span id="footer-date">0000</span> Andrew Harvard.</p>
-      <button class="theme-switch">Go ...</button>
+      <p>Connect with me on <a href="https://twitter.com/aharvard">Twitter</a> or <a href="https://www.linkedin.com/in/aharvard/">LinkedIn</a>!</p>
+      <p>This website is built with 11ty and hosted on Netlify. <span id="copyright"></span>
     </footer>
     <script>
       {{ js | jsmin | safe }}

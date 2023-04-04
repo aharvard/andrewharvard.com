@@ -1,19 +1,11 @@
-const footerDateSpan = document.getElementById('footer-date');
+const footerCopyright = document.getElementById('copyright');
 const year = new Date();
-footerDateSpan.innerText = year.getFullYear();
-
-// let PCSDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-// let PCSLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-
-// setSessionStorage(PCSDark, PCSLight);
-// updateDOM();
-
-// window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-//   e.matches ? setSessionStorage(true, false) : setSessionStorage(false, true);
-// });
+footerCopyright.innerText = `© ${year.getFullYear()} Andrew Harvard.`;
 
 function themeToggle() {
-  const themeButton = document.querySelector('.theme-switch');
+  const themeButton = document.createElement('button');
+  const footer = document.querySelector('footer');
+  footer.insertAdjacentElement('beforeend', themeButton);
 
   function updateDOM() {
     if (sessionStorage.getItem('Color Scheme') == 'dark') {
@@ -26,9 +18,6 @@ function themeToggle() {
       themeButton.innerText = 'Go Dark';
     }
   }
-
-  // const isDark = sessionStorage.getItem('Dark Mode');
-  // const isLight = sessionStorage.getItem('Dark Mode');
 
   window.matchMedia('(prefers-color-scheme: light)').addListener(e => {
     sessionStorage.setItem('Color Scheme', !e.matches ? 'dark' : 'light');
@@ -44,9 +33,9 @@ function themeToggle() {
         : 'dark',
     );
   }
+
   updateDOM();
 
-  // Watch for click on theme button and update UI
   themeButton.addEventListener('click', function () {
     const currentColorScheme = sessionStorage.getItem('Color Scheme');
     sessionStorage.setItem(
