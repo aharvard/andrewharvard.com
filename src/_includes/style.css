@@ -271,25 +271,17 @@ a.button {
 }
 
 .work-landing__thumbnail-link:hover .work-landing__thumbnail-img,
-.work-landing__thumbnail-link:focus .work-landing__thumbnail-img {
+.work-landing__thumbnail-link:focus .work-landing__thumbnail-img,
+.work-landing__thumbnail-link:active .work-landing__thumbnail-img {
   transform: scale(1.1);
   opacity: 0.15;
 }
 
 .work-landing__thumbnail-link:hover .work-landing__thumbnail-title,
-.work-landing__thumbnail-link:focus .work-landing__thumbnail-title {
+.work-landing__thumbnail-link:focus .work-landing__thumbnail-title,
+.work-landing__thumbnail-link:active .work-landing__thumbnail-title {
   opacity: 1;
   transform: translateY(0px);
-}
-
-.work-landing__thumbnail-link:active .work-landing__thumbnail-img {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.work-landing__thumbnail-link:active .work-landing__thumbnail-title {
-  opacity: 0;
-  transform: translateY(100px);
 }
 
 .work-item {
