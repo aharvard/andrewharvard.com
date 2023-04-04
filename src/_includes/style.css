@@ -141,44 +141,54 @@ nav {
   text-underline-offset: 8px;
 }
 
-.about {
-  max-width: 700px;
-  margin: auto;
-}
-
 a.button {
   text-decoration: none;
 }
 
-.recent-projects {
+.about {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 2fr 1fr;
+}
+
+.about__content {
+  /* outline: 1px solid red; */
+}
+
+.about__highlights {
+  /* outline: 1px solid red; */
+  margin-top: 3rem;
+}
+
+.highlights {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 }
 
-.recent-projects article:first-of-type {
-  grid-column: 1 / -1;
+.highlights article:first-of-type {
+  /* grid-column: 1 / -1; */
 }
 
-.recent-project {
+.highlight {
   border: 2px solid currentColor;
   border-radius: 10px;
   position: relative;
   background: var(--background-color);
-  padding: 24px 30px;
+  padding: 0.5rem;
   display: block;
   text-decoration: none;
   transition: transform 250ms ease;
 }
 
-.recent-project:hover,
-.recent-project:focus,
-.recent-project:active {
+.highlight:hover,
+.highlight:focus,
+.highlight:active {
   background: var(--button-color);
   outline: none;
 }
 
-.recent-project::after {
+.highlight::after {
   content: '';
   height: 100%;
   width: 100%;
@@ -195,40 +205,48 @@ a.button {
   transform: translateX(5px) translateY(5px);
 }
 
-.recent-project:focus::after,
-.recent-project:hover::after {
+.highlight:focus::after,
+.highlight:hover::after {
   transform: translateX(10px) translateY(10px);
 }
-.recent-project:active::after {
+.highlight:active::after {
   transform: translateX(5px) translateY(5px);
 }
 
-.recent-project > * {
+.highlight > * {
   transform-origin: center;
   transition: inherit;
 }
-.recent-project:hover > *,
-.recent-project:focus > * {
+.highlight:hover > *,
+.highlight:focus > * {
   transform: translateY(1px);
 }
-.recent-project:active > * {
+.highlight:active > * {
   transform: translateY(2px);
   transition-duration: 50ms;
 }
 
-.recent-project__heading {
-  margin-top: 0;
+.highlight__heading {
+  margin: 0;
+  font-size: 100%;
+  margin-bottom: 0.5rem;
 }
 
-.recent-project__eyebrow {
+.highlight__eyebrow {
   display: block;
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25rem;
 }
 
-.recent-project__cta {
+.highlight__prompt {
+  margin: 0;
+  font-size: 80%;
+  line-height: 1.4;
+}
+
+.highlight__cta {
   font-weight: 600;
   margin-bottom: 0;
 }
