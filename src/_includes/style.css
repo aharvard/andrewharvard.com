@@ -21,6 +21,8 @@ body.light {
   --text-color: var(--gray-800);
   --interactive-text-color: var(--gray-800);
   --interactive-text-hover-color: var(--gray-900);
+  --inside-video-gradient: var(--gray-200);
+  --outside-video-gradient: var(--gray-600);
 }
 body.dark {
   --background-color: var(--gray-900);
@@ -30,6 +32,8 @@ body.dark {
   --text-color: var(--gray-400);
   --interactive-text-color: var(--gray-400);
   --interactive-text-hover-color: var(--gray-100);
+  --inside-video-gradient: var(--gray-800);
+  --outside-video-gradient: var(--gray-900);
 }
 @media (prefers-color-scheme: dark) {
   body {
@@ -300,10 +304,26 @@ a.button {
 
 .video-wrapper {
   background: rgba(0, 0, 0, 0.1);
+  background: radial-gradient(
+    var(--inside-video-gradient) 0%,
+    var(--outside-video-gradient) 200%
+  );
+  position: relative;
+}
+
+.video-wrapper::after {
+  content: 'Video loading...';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-weight: 800;
+  display: grid;
+  place-content: center;
 }
 
 .video-wrapper iframe {
-  /* opacity: 0; */
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
