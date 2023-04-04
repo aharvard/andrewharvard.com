@@ -303,28 +303,18 @@ a.button {
 }
 
 .video-wrapper {
-  background: rgba(0, 0, 0, 0.1);
-  background: radial-gradient(
-    var(--inside-video-gradient) 0%,
-    var(--outside-video-gradient) 200%
-  );
+  /* background: rgba(0, 0, 0, 0.1); */
   position: relative;
-}
-
-.video-wrapper::after {
-  content: 'Video loading...';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  font-weight: 800;
-  display: grid;
-  place-content: center;
 }
 
 .video-wrapper iframe {
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
+  margin: 0;
+  background: radial-gradient(
+    var(--inside-video-gradient) 0%,
+    var(--outside-video-gradient) 200%
+  );
+  z-index: 1;
 }
