@@ -1,8 +1,17 @@
 {% extends "./base.njk" %}
 
 {% block content %}
+     {# <h1>Hi, I'm Andrew. <em title="preferred pronouns" aria-label="and my preferred pronouns are he and him">he/him</em></h1>
+<p><strong>Black Lives Matter.</strong> <a href="https://support.eji.org/give/153413/#!/donation/checkout">Support the Equal Justice Initiative.</a></p> #}
   <div class="about">
-    {{ content | safe }}
-    {% include "paritals/my-recent-project.njk" %}
+    <div class="about__content">
+      {{ content | safe }}
+    </div>
+    <div class="about__highlights">
+      <h2>Highlights</h2>
+      <div class="highlights"> 
+        {% include "paritals/highlights.njk" %}
+      </div>
+    </div>
   </div>
 {% endblock %}

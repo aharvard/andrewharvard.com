@@ -1,0 +1,37 @@
+{% macro cardSwatch(props) %}
+<article>
+  <a class="highlight" href="{{ props.url }}">
+    <h2 class="highlight__heading"><span class="highlight__eyebrow">{{ props.eyebrow }}</span> {{ props.title }}</h2>
+    <p class="highlight__prompt">{{ props.prompt }}</p>
+  </a>
+</article>
+{% endmacro %}
+
+
+{{ cardSwatch({
+  eyebrow: "Project", 
+  title: "Critique Cards", 
+  url: "https://critique-cards.netlify.app/",
+  prompt: "Design critiques can be challenging. Next time you're not sure how to ask for feedback or need help guiding a design review, draw a card and start a discussion!"
+}) }}
+
+{{ cardSwatch({
+  url: "/",
+  eyebrow: "My Working Style",
+  title: "Async Design Engineering", 
+  prompt: "Colloboration is a key part of my design process. I'm always looking for ways to improve my workflow and make it easier for my team to work together."
+}) }}
+
+{{ cardSwatch({
+  url: "https://codepen.io/aharvard",
+  eyebrow: "UI Playground",
+  title: "My Pens on Codepen", 
+  prompt: "Occasionally, I tinker around on CodePen"
+}) }}
+
+{{ cardSwatch({
+  url: "/",
+  eyebrow: "Design System Engineering",
+  title: "The Monster Job Card", 
+  prompt: "29 Data Inputs, 1.5 Million Content Possiblities, One Component"
+}) }}
