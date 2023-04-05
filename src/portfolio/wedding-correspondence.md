@@ -1,6 +1,8 @@
 ---
 layout: 'layouts/work-item.njk'
 title: 'Wedding Correspondence'
+for: 'My Wedding'
+role: 'Graphic Designer, Fiancé'
 date: 2014-05-24
 displayOrder: 1
 thumbnail:

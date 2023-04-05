@@ -2,6 +2,8 @@
 layout: 'layouts/work-item.njk'
 title: 'Typography and Information Design'
 date: 2011-03-01
+school: SCAD Atlanta
+role: Student
 displayOrder: 1
 thumbnail:
   image: '/img/typography-and-information-design-assets/AdvancedType_Page_48@2x.jpg'

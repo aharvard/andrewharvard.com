@@ -2,6 +2,8 @@
 layout: 'layouts/work-item.njk'
 title: 'Intuitive Voting App'
 date: 2014-11-17
+role: 'UX Designer'
+company: 'Intuitive Company'
 displayOrder: 1
 thumbnail:
   image: '/img/intuitive-voting-apps-assets/01@2x.jpg'

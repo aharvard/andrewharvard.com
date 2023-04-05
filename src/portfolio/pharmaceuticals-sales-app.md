@@ -1,6 +1,8 @@
 ---
 layout: 'layouts/work-item.njk'
 title: 'Pharmaceuticals Sales App'
+company: 'T!E Consulting'
+role: 'UX Designer, Freelance'
 date: 2014-09-01
 displayOrder: 1
 thumbnail:

@@ -2,6 +2,8 @@
 layout: 'layouts/work-item.njk'
 title: 'Drink Posters'
 date: 2012-10-01
+role: 'Graphic Designer'
+company: 'United Distributors'
 displayOrder: 1
 thumbnail:
   image: '/img/drink-posters-assets/01@2x.jpg'

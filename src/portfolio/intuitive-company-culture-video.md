@@ -2,6 +2,8 @@
 layout: 'layouts/work-item.njk'
 title: "Intuitive Company's Culture Video"
 date: 2014-12-01
+role: 'Video Editor'
+company: 'Intuitive Company'
 displayOrder: 1
 thumbnail:
   image: '/img/culture-video-assets/01@2x.jpg'

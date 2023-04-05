@@ -1,12 +1,17 @@
 const CleanCSS = require('clean-css');
 const Terser = require('terser');
 const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
+const {DateTime} = require('luxon');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({'src/public': '/'});
 
   eleventyConfig.addFilter('cssmin', function (code) {
     return new CleanCSS({}).minify(code).styles;
+  });
+
+  eleventyConfig.addFilter('asPostDate', dateObj => {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
   // Returns work items, sorted by display order

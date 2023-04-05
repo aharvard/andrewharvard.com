@@ -11,6 +11,7 @@ html {
   --gray-900: #212121;
   --black: #111;
   --site-width: 1400px;
+  --narrow-width: 700px;
 }
 
 body.light {
@@ -142,7 +143,7 @@ nav {
 }
 
 .about {
-  max-width: 700px;
+  max-width: var(--narrow-width);
   margin: auto;
 }
 
@@ -234,6 +235,9 @@ a.button {
 }
 
 .work-landing {
+}
+
+.work-landing__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 300px;
@@ -289,12 +293,34 @@ a.button {
 }
 
 .work-item {
-  display: grid;
-  gap: 1rem;
+  max-width: var(--narrow-width);
+  /* display: grid; */
+  /* gap: 1rem; */
+  margin: auto;
 }
 
-.work-item > * {
-  margin: 0;
+.work-item__meta {
+  border-top: 2px solid currentColor;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 2rem;
+}
+
+.work-item__meta-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+}
+
+.work-item__meta-item-label {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.work-item__meta-item-value {
 }
 
 .work-item img {
@@ -308,6 +334,9 @@ a.button {
 }
 
 .video-wrapper iframe {
+  border: 2px solid currentColor;
+  border-radius: 10px;
+  overflow: hidden;
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;

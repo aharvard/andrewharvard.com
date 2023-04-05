@@ -1,6 +1,8 @@
 ---
 layout: 'layouts/work-item.njk'
 title: 'Oakley Art Direction'
+company: 'Oakley'
+role: 'Concept Designer, Freelance'
 date: 2014-11-17
 displayOrder: 1
 thumbnail:

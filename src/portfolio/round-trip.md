@@ -1,6 +1,8 @@
 ---
 layout: 'layouts/work-item.njk'
 title: 'Round Trip'
+role: 'UX Designer'
+company: 'Intuitive Company'
 date: 2014-11-17
 displayOrder: 1
 thumbnail:
