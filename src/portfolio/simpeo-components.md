@@ -10,7 +10,7 @@ thumbnail:
   imageAlt: ''
 ---
 
-I used Storybook to build a React component library in isolation and integrated them into multiple Simpeo websites.
+I used Storybook to build a React component library in isolation and integrated it into multiple Simpeo websites.
 
 ## Button
 
