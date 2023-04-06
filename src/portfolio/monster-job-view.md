@@ -1,6 +1,6 @@
 ---
 layout: 'layouts/work-item.njk'
-title: 'Job View'
+title: 'Monster Job View'
 date: 2023-04-04
 displayOrder: 1
 company: Monster
