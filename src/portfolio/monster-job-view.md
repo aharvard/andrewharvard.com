@@ -12,17 +12,19 @@ thumbnail:
 
 ## Design Prototyping
 
-After the Monster design and product teams validated a new direction for a "job view" refresh, I built a design prototype to discover and solidify technical requirements, break down the work, and deliver across two teams and two UI repos (design system & the customer-facing website).
+After the Monster design and product teams validated a new direction for a "job view" refresh, I built a design prototype to discover and solidify technical requirements, break down the work, and deliver across two teams and two UI repos (our design system & the customer-facing website).
 
 <div class="video-wrapper"><iframe style="aspect-ratio: 3508 / 1870" src="https://player.vimeo.com/video/814942505" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen  title="job-view-scroll-proto.mov"></iframe></div>
 
 ## Technical Planning
 
-I used Confluence to document and drive technical planning conversations, which helped us batch and sequence the work:
+The prototype helped me identify patterns and drive technical planning conversations, which helped us batch and sequence the work. I wrote some docs that outlined what we needed to execute in our design system:
 
 1. Update the Tab Component
 2. Update the Horizontal Navigation Component
 3. Deliver new Scroll Navigation Components
+
+_Each work item mentioned here was a team effort! While I took point on execution, I collaborated with our designers, incorporated feedback from other devs after code reviews, and fixed bugs found by our QA folks._
 
 ![](/img/monster-job-view/01.jpg)
 
@@ -30,9 +32,7 @@ I used Confluence to document and drive technical planning conversations, which 
 
 ### Tab Component Updates
 
-I updated the Tab component with a new look and feel and fixed some accessibility issues.
-
-A Tab can have a light, dark, or dynamic background in this new design. When dynamic is configured, the color of the label is calculated at runtime to achieve sufficient color contrast.
+I updated the Tab component with a new look and feel and fixed some accessibility issues. Additionally, with the new design, a Tab can have a light, dark, or dynamic background in this new design. When dynamic is configured, the color of the label is calculated at runtime to achieve sufficient color contrast.
 
 ![](/img/monster-job-view/02.jpg)
 
@@ -48,9 +48,15 @@ Next, I refactored the Horizontal Navigation component to leverage the updated T
 
 ### New Scroll Components
 
-Then, I developed two new components to deliver a scrolling navigational experience, as initially specified in the job view design concept. I used the Intersection Observer API to execute the interaction detail and wrote a reducer to track the "active" section in view.
+The trickiest part of this work was identifying how we would deliver the scrolling UX from the design system. Without prototyping, my team likely would have spent more time iterating during delivery cycles than we could afford.
 
-These components abstract away the implementation details for developers so they don't have to import and connect the Horizontal Navigation to the user's scroll. Instead, a dev can import a Scroll Navigation component that acts as a wrapper and a Scroll Navigation Section component that drives the Tabs' content in the Horizontal Navigation.
+I advocated for us to abstract away as many implementation details for developers so that our design system has more control over how this experience evolves. So, I developed two new components for this part of the work to deliver a scrolling navigational experience.
+
+The Scroll Navigation component wraps all of the page content where we want to provide a scroll-based navigational experience. This component allows a developer to configure which nav element to display. Out of the box, this component renders the Horizontal Navigation. This means developers don't have to import and connect the Horizontal Navigation to the user's scroll.
+
+The Scroll Navigation Section component wraps content sections within the parent and drives the Tabs' content in the Horizontal Navigation.
+
+To make things work as intended, I used the Intersection Observer API and wrote a simple state-machine reducer to track the "active" section in view.
 
 ![](/img/monster-job-view/06.jpg)
 
