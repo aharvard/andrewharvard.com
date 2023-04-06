@@ -20,9 +20,9 @@ After the Monster design and product teams validated a new direction for a "job 
 
 The prototype helped me identify patterns and drive technical planning conversations, which helped us batch and sequence the work. I wrote some docs that outlined what we needed to execute in our design system:
 
-1. Update the Tab Component
-2. Update the Horizontal Navigation Component
-3. Deliver new Scroll Navigation Components
+1. Update the Tab component
+2. Update the Horizontal Navigation component
+3. Deliver new Scroll Navigation components
 
 _Each work item mentioned here was a team effort! While I took point on execution, I collaborated with our designers, incorporated feedback from other devs after code reviews, and fixed bugs found by our QA folks._
 
@@ -32,7 +32,7 @@ _Each work item mentioned here was a team effort! While I took point on executio
 
 ### Tab Component Updates
 
-I updated the Tab component with a new look and feel and fixed some accessibility issues. Additionally, with the new design, a Tab can have a light, dark, or dynamic background in this new design. When dynamic is configured, the color of the label is calculated at runtime to achieve sufficient color contrast.
+I updated the Tab component with a new look and feel and fixed some accessibility issues. Additionally, with the new design, a Tab can have a light, dark, or dynamic background. When dynamic is configured, the color of the label is calculated at runtime to achieve sufficient color contrast.
 
 ![](/img/monster-job-view/02.jpg)
 
@@ -40,7 +40,7 @@ I updated the Tab component with a new look and feel and fixed some accessibilit
 
 ### Horizontal Navigation Updates
 
-Next, I refactored the Horizontal Navigation component to leverage the updated Tab component. Previously, this component lacked semantic markup and did not provide the most accessible UX. I maintained backwards compatibility while extending to allow Tabs to be constructed from a single prop that expects an object.
+Next, I refactored the Horizontal Navigation component to leverage the updated Tab component. Previously, this component lacked semantic markup and did not provide the most accessible UX. I maintained backwards compatibility while also extending this component to allow Tabs to be constructed from a single prop that expects an object.
 
 ![](/img/monster-job-view/04.jpg)
 
@@ -66,7 +66,7 @@ To make things work as intended, I used the Intersection Observer API and wrote 
 
 ## Ongoing Challenges
 
-Due to browser performance issues and resource constraints, we could not deliver the initial design ask — when a Tab overflows the Horizontal Navigation, it should scroll into view when it becomes active.
+Due to browser performance issues and time constraints, we could not deliver the initial design ask — when a Tab overflows the Horizontal Navigation, it should scroll into view when it becomes active.
 
 To drive conversations with our product and design partners, I put together the following deck to illustrate the issue and proposes alternative directions.
 
@@ -74,7 +74,7 @@ To drive conversations with our product and design partners, I put together the 
 <iframe style="aspect-ratio: 3584 / 2240" src="https://player.vimeo.com/video/814932758?h=6c3c63fe02" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="horizontal-nav-overflow-issue"></iframe>
 </div>
 
-Currently, we're having conversations about how to complete the design work and considering the following:
+Currently, we're having conversations about how to meet the initial design ask and considering the following options:
 
 1. Ship MVP and do nothing
 2. Spend an unknown amount of time engineering a solution that meets the design while being performant in the browser
@@ -82,4 +82,4 @@ Currently, we're having conversations about how to complete the design work and 
 
 ## Conclusion
 
-I suspect we may resort to shipping the MVP. However, knowing that other options exist is valuable, and we will likely be able to fall back on the other ideas as we get real feedback from users.
+I suspect we may resort to shipping the MVP. However, knowing that other options exist is valuable, and we will likely be able to fall back on them as we get real feedback from users.
