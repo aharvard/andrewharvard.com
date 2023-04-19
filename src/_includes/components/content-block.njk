@@ -1,0 +1,31 @@
+{% macro contentBlock(props = {
+  eyebrow: "",
+  headline: "",
+  blurb: "",
+  primaryCTA: {
+    text: "",
+    url: ""
+  },
+  secondaryCTA: {
+    text: "",
+    url: ""
+  }
+}) %}
+  <div class="content-block">
+    <div class="content-block-container">
+      {% if props.eyebrow %}
+        <p class="meta">{{ props.eyebrow }}</p>
+      {% endif %}
+      <p class="headline">{{ props.headline }}</p>
+      <p class="lead">{{ props.blurb }}</p>
+      <div class="content-block-actions">
+        {% if props.primaryCTA.text %}
+          <a href="{{ props.primaryCTA.url }}" class="button primary">{{ props.primaryCTA.text }}</a>
+        {% endif %}
+        {% if props.secondaryCTA.text %}
+          <a href="{{ props.secondaryCTA.url }}" class="button secondary">{{ props.secondaryCTA.text }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endmacro %}

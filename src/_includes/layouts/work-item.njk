@@ -2,44 +2,44 @@
 
 {% block content %}
   <div class="work-item">
-    <h1>{{ title }}</h1>
+    <h1 class="headline">{{ title }}</h1>
     <div class="work-item__meta">
-      
+
       {% if date %}
-      <div class="work-item__meta-item">
-        <span class="work-item__meta-item-label">Date</span>
-        <span class="work-item__meta-item-value">{{ date | asPostDate }}</span>
-      </div>
+        <div class="work-item__meta-item">
+          <span class="work-item__meta-item-label">Date</span>
+          <span class="work-item__meta-item-value">{{ date | asPostDate }}</span>
+        </div>
       {% endif %}
-      
+
       {% if company %}
-      <div class="work-item__meta-item">
-        <span class="work-item__meta-item-label">Company</span>
-        <span class="work-item__meta-item-value">{{ company }}</span>
-      </div>
+        <div class="work-item__meta-item">
+          <span class="work-item__meta-item-label">Company</span>
+          <span class="work-item__meta-item-value">{{ company }}</span>
+        </div>
       {% endif %}
 
       {% if for %}
-      <div class="work-item__meta-item">
-        <span class="work-item__meta-item-label">For</span>
-        <span class="work-item__meta-item-value">{{ for }}</span>
-      </div>
+        <div class="work-item__meta-item">
+          <span class="work-item__meta-item-label">For</span>
+          <span class="work-item__meta-item-value">{{ for }}</span>
+        </div>
       {% endif %}
-    
+
       {% if role %}
-      <div class="work-item__meta-item">
-        <span class="work-item__meta-item-label">Role</span>
-        <span class="work-item__meta-item-value">{{ role }}</span>
-      </div>
+        <div class="work-item__meta-item">
+          <span class="work-item__meta-item-label">Role</span>
+          <span class="work-item__meta-item-value">{{ role }}</span>
+        </div>
       {% endif %}
-     
+
       {% if school %}
-      <div class="work-item__meta-item">
-        <span class="work-item__meta-item-label">School</span>
-        <span class="work-item__meta-item-value">{{ school }}</span>
-      </div>
+        <div class="work-item__meta-item">
+          <span class="work-item__meta-item-label">School</span>
+          <span class="work-item__meta-item-value">{{ school }}</span>
+        </div>
       {% endif %}
-      
+
     </div>
     {{ content | safe }}
   </div>

@@ -1,6 +1,6 @@
 ---
-layout: 'layouts/index.njk'
-title: Andrew Harvard
+layout: 'layouts/about.njk'
+title: About Me
 description: Senior UX Engineer/Interaction Designer hybrid. Enjoys writing modern CSS, accessible HTML, and vanilla JS.
 ---
 

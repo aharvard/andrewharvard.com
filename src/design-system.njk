@@ -1,28 +1,72 @@
+{% import "components/content-block.njk" as m  %}
 {% extends "layouts/base.njk" %}
+
 {% block content %}
   <div class="design-system-container">
-    <h2 class="headline">Headline</h2>
-    <h2 class="heading">Heading</h2>
-    <p class="meta">meta</p>
-    <p class="lead">
+    <h1 class="lead">andrewharvard.com design system</h1>
+    <div class="design-system-container-item" data-title=".headline">
+      <h2 class="headline">Headline</h2>
+    </div>
+    <div class="design-system-container-item" data-title=".heading">
+      <h2 class="heading">Heading</h2>
+    </div>
+    <div class="design-system-container-item" data-title=".meta">
+      <p class="meta">meta</p>
+    </div>
+    <div class="design-system-container-item" data-title=".lead">
+      <p class="lead">
       Lead - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working at
       the intersection of design and technology.
     </p>
-    <p class="body-1">
+    </div>
+    <div class="design-system-container-item" data-title=".body-1">
+      <p class="body-1">
       Body 1 - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working
       at the intersection of design and technology.
     </p>
-    <p class="body-2">
+    </div>
+    <div class="design-system-container-item" data-title=".body-2">
+      <p class="body-2">
       Body 2 - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working
       at the intersection of design and technology.
     </p>
-    <p class="body-3">
+    </div>
+    <div class="design-system-container-item" data-title=".body-3">
+      <p class="body-3">
       Body 3 - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working
       at the intersection of design and technology.
     </p>
-    <button class="primary">Primary button</button>
-    <button class="secondary">Secondary button</button>
-    {% include "./_includes/paritals/header.njk" %}
-    {% include "./_includes/paritals/footer.njk" %}
+    </div>
+    <div class="design-system-container-item" data-title="Button: Primary">
+      <button class="primary">Primary button</button>
+    </div>
+    <div class="design-system-container-item" data-title="Button: Secondary">
+      <button class="secondary">Secondary button</button>
+    </div>
+    <div class="design-system-container-item" data-title="Content Block: Example A">
+      {{ m.contentBlock({
+        headline: "A Catchy Headline", 
+        blurb: "Commodo enim tempor nulla sunt incididunt ex quis eu anim aliquip aute adipisicing.",
+        primaryCTA: { 
+          text: "Primary Action",
+          url: "#"
+        },
+        secondaryCTA: {
+          text: "Secondary Action", 
+          url: "#"
+        }
+        }) }}
+    </div>
+    <div class="design-system-container-item" data-title="Content Block: Example B">
+      {{ m.contentBlock({
+        eyebrow: "Eyebrow", 
+        headline: "Proident commodo veniam elit in magna minim proident ipsum commodo.", 
+        blurb: "Commodo enim tempor nulla sunt incididunt ex quis eu anim aliquip aute adipisicing.",
+        primaryCTA: {
+          text: "Primary Action",
+          url: "#"
+        }
+        }) }}
+    </div>
   </div>
 {% endblock %}

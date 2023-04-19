@@ -16,14 +16,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
     <style>
-      {{css | cssmin | safe}}</style>
+      {{css | cssmin | safe}}
+    </style>
     <title>{{ title }}</title>
   </head>
   <body class="light">
+    {% include "components/header.njk" %}
     <main>
       {% block content %}{% endblock %}
     </main>
+    {% include "components/footer.njk" %}
     <script>
-      {{ js | jsmin | safe }}</script>
+      {{ js | jsmin | safe }}
+    </script>
   </body>
 </html>

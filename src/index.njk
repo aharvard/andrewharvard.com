@@ -1,0 +1,28 @@
+{% import "components/content-block.njk" as m  %}
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
+  {{ m.contentBlock({
+        headline: "Hi there! I’m Andrew.", 
+        blurb: "I have over a decade of experience in design systems, prototyping, and front-end development. I love working at the intersection of design and technology.",
+        primaryCTA: { 
+          text: "View my portfolio",
+          url: "/portfolio"
+        },
+        secondaryCTA: {
+          text: "Learn about me", 
+          url: "/about"
+        }
+        }) }}
+
+  {{ m.contentBlock({
+        eyebrow: "Featured case study",
+        headline: "Engineering the new Monster Job View", 
+        blurb: "A case study on building the right thing and building the thing right.",
+        primaryCTA: { 
+          text: "View case study",
+          url: "/portfolio/monster-job-view/"
+        }
+        }) }}
+{% endblock %}
