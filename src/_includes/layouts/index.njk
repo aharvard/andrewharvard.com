@@ -1,8 +1,9 @@
 {% extends "./base.njk" %}
-
+{% include "paritals/header.njk" %}
 {% block content %}
   <div class="about">
     {{ content | safe }}
     {% include "paritals/my-recent-project.njk" %}
   </div>
+  {% include "paritals/footer.njk" %}
 {% endblock %}

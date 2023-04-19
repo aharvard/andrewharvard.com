@@ -1,13 +1,10 @@
-{% if page.url !== '/' %}
-  {% set active = "--active" %}
-{% endif %}
-
 <header class="header">
-  {# If on the home page #}
-  {% if page.url !== '/' %}
-    <a href="/" class="header-link">Andrew Harvard</a>
-  {% endif %}
-  <nav>
-    <a href="/portfolio" class="header-link{{active}}">Portfolio</a>
-  </nav>
+  <div class="header-container">
+    <a href="/" class="body-2 header-link">Andrew Harvard</a>
+    <nav class="header-nav">
+      <a href="/portfolio" class="body-2 header-link{{ active }}">About Me</a>
+      <a href="/portfolio" class="body-2 header-link{{ active }}">My Portfolio</a>
+      {# {% include "./dark-mode-toggle.njk" %} #}
+    </nav>
+  </div>
 </header>
