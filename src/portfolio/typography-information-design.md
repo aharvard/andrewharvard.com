@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Typography and Information Design'
 date: 2011-03-01
 school: SCAD Atlanta

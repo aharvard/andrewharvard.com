@@ -2,8 +2,8 @@
   <div class="header-container">
     <a href="/" class="body-2 header-link">Andrew Harvard</a>
     <nav class="header-nav">
-      <a href="/about" class="body-2 header-link{{ active }}">About Me</a>
-      <a href="/portfolio" class="body-2 header-link{{ active }}">My Portfolio</a>
+      <a href="/about" class="body-2 header-link{{ aboutActive }}">About Me</a>
+      <a href="/portfolio" class="body-2 header-link{{ '--active' if '/portfolio' in page.url }}">My Portfolio</a>
       {# {% include "./dark-mode-toggle.njk" %} #}
     </nav>
   </div>

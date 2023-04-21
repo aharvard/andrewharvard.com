@@ -1,0 +1,170 @@
+/* -------------------------------------- */
+/* ------------  Button  ---------------- */
+/* -------------------------------------- */
+
+a.button {
+  text-decoration: none;
+}
+
+.button,
+button {
+  border-radius: var(--border-radius);
+  border: 1px solid;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  display: inline-block;
+}
+a,
+.button,
+button {
+  transition: all 250ms ease;
+}
+a:hover,
+.button:hover,
+button:hover {
+  opacity: 0.8;
+  transform: scale(1.025);
+}
+a:active,
+.button:active,
+button:active {
+  opacity: 0.8;
+  transform: scale(0.975);
+}
+
+.button.primary,
+button.primary {
+  background: var(--button-primary-background-color);
+  color: var(--button-primary-text-color);
+  border-color: var(--button-primary-border-color);
+}
+
+.button.secondary,
+button.secondary {
+  background: var(--button-secondary-background-color);
+  color: var(--button-secondary-text-color);
+  border-color: var(--button-primary-border-color);
+}
+
+a {
+  color: var(--interactive-text-color);
+  text-decoration-thickness: 2px;
+}
+
+/* -------------------------------------- */
+/* ------- Design System Container ------ */
+/* -------------------------------------- */
+
+.design-system-container {
+  margin: 0 auto;
+  max-width: var(--site-width);
+  padding: 1rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.design-system-container h1 {
+  margin: 1rem 0;
+}
+
+.design-system-container-item {
+  outline: 1px dashed var(--text-color);
+  padding: 1rem;
+  position: relative;
+}
+.design-system-container-item::before {
+  content: attr(data-title);
+  position: absolute;
+  top: -1.5em;
+  left: -0.75em;
+  background: var(--background-color);
+  border: 1px solid var(--text-color);
+  font-size: 51%;
+  padding: 0.5em 0.75em;
+  font-family: monospace;
+}
+
+/* -------------------------------------- */
+/* ------------  Header  ---------------- */
+/* -------------------------------------- */
+
+.header {
+  margin-bottom: 5vh;
+}
+
+.header-container {
+  max-width: var(--site-width);
+  padding: 2.5rem var(--container-padding);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.header-link {
+  text-decoration: none;
+  color: var(--header-link-idle-color);
+}
+
+.header-link--active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+  color: var(--header-link-active-color);
+}
+
+/* -------------------------------------- */
+/* ---------  Content Block  ------------ */
+/* -------------------------------------- */
+
+.content-block {
+  /* background: pink; */
+  min-height: 60vh;
+  /* outline: 1px solid red; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.content-block * {
+  /* outline: 1px solid blue; */
+}
+.content-block-container {
+  display: grid;
+  gap: 1.5rem;
+  max-width: var(--site-width);
+  margin: 0 auto;
+  padding: 2rem var(--container-padding);
+  flex: 1 1 auto;
+}
+
+.content-block .headline {
+  max-width: 20ch;
+  width: 100%;
+}
+
+.content-block .lead {
+  color: var(--content-block-text-color);
+}
+
+.content-block-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: var(--site-width);
+}
+
+/* -------------------------------------- */
+/* --------------  Footer  -------------- */
+/* -------------------------------------- */
+
+.footer {
+  padding: 2rem 0;
+}

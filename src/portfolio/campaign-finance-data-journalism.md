@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Campaign Finance Data Journalism'
 date: 2016-05-01
 role: 'UX Engineer'

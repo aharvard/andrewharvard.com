@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'March March Madness Microphone Flags'
 date: 2010-05-01
 company: Turner Sports

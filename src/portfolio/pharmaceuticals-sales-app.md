@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Pharmaceuticals Sales App'
 company: 'T!E Consulting'
 role: 'UX Designer, Freelance'

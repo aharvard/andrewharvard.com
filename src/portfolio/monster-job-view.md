@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Engineering the new Monster Job View'
 date: 2023-04-04
 displayOrder: 1

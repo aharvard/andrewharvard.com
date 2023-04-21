@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'CNN Newsroom Graphics'
 role: 'Graphic Designer, Newsroom'
 company: 'CNN'

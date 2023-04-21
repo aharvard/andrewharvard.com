@@ -4,6 +4,7 @@ footerCopyright.innerText = `© ${year.getFullYear()} Andrew Harvard.`;
 
 function themeToggle() {
   const themeButton = document.createElement('button');
+  themeButton.classList.add('primary');
   const footer = document.querySelector('footer');
   footer.insertAdjacentElement('beforeend', themeButton);
 

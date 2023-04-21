@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Motion Design Demo Reel'
 date: 2015-10-01
 role: 'Motion Designer'

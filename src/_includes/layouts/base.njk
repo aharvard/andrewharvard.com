@@ -1,9 +1,10 @@
-{% set css %}
-{% include "../style.css" %}
-{% endset %}
-{% set js %}
-{% include "../script.js" %}
-{% endset %}
+{% set globalStyles %}{% include "styles/global.css" %}{% endset %}
+{% set darkTokens %}{% include "styles/tokens-dark.njk" %}{% endset %}
+{% set lightTokens %}{% include "styles/tokens-light.njk" %}{% endset %}
+{% set componentStyles %}{% include "../styles/components.css" %}{% endset %}
+{% set layoutStyles %}{% include "../styles/layouts.css" %}{% endset %}
+{% set js %}{% include "../script.js" %}{% endset %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,9 +15,22 @@
     <title>{{ title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-      {{css | cssmin | safe}}
+      {{globalStyles | cssmin | safe}}
+      body.light {
+        {{lightTokens | safe}}
+      }
+      body.dark {
+        {{darkTokens | safe}}
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          {{darkTokens | safe}}
+        }
+      }
+      {{componentStyles | cssmin | safe}}
+      {{layoutStyles | cssmin | safe}}
     </style>
     <title>{{ title }}</title>
   </head>

@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Stop Motion'
 date: 2011-03-01
 role: Video Editor

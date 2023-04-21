@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Simpeo Calculator'
 company: 'Simpeo'
 role: 'UX Engineer'

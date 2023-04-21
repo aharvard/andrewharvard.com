@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Coca-Cola Beverage Cooler Redesign'
 date: 2011-05-01
 school: Georgia Tech

@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Async Work at Monster'
 date: 2023-04-06
 displayOrder: 1

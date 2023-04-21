@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Drink Posters'
 date: 2012-10-01
 role: 'Graphic Designer'
