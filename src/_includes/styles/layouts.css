@@ -56,7 +56,7 @@
 }
 
 .detail-content > * {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .detail-content p {
@@ -68,6 +68,8 @@
 .detail-content h4,
 .detail-content h5,
 .detail-content h6 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   color: var(--detail-content-heading-color);
 }
 
@@ -206,6 +208,6 @@
   text-shadow: var(--portfolio-link-heading-shadow);
   line-height: 1.2;
   font-size: 1.25rem;
-  padding-right: 4em;
+  padding-right: 2em;
   z-index: 1;
 }
