@@ -10,7 +10,7 @@ thumbnail:
   imageAlt: ''
 ---
 
-I led the design and UI development of a website data journalists used to explore campaign finance for local and notational political campaigns.
+I led the design and UI development of a website data journalists used to explore campaign finance for local and national political campaigns.
 
 ## Visual Style Guide
 
