@@ -3,21 +3,27 @@ const year = new Date();
 footerCopyright.innerText = `© ${year.getFullYear()} Andrew Harvard.`;
 
 function themeToggle() {
-  const themeButton = document.createElement('button');
-  themeButton.classList.add('primary');
-  const footer = document.querySelector('footer');
-  const footerToggleElement = footer.querySelector('#footerColorModeToggle');
-  footerToggleElement.insertAdjacentElement('beforeend', themeButton);
+  const footerToggleElements = document.querySelectorAll(
+    '.footer-color-mode-toggle',
+  );
+  footerToggleElements.forEach(el => {
+    const themeButton = document.createElement('button');
+    themeButton.classList.add('primary');
+    el.insertAdjacentElement('beforeend', themeButton);
+  });
 
+  const themeButtons = document.querySelectorAll(
+    '.footer-color-mode-toggle button',
+  );
   function updateDOM() {
     if (sessionStorage.getItem('Color Scheme') == 'dark') {
       document.body.classList.add('dark');
       document.body.classList.remove('light');
-      themeButton.innerText = 'Go Light';
+      themeButtons.forEach(button => (button.innerText = 'Toggle Light Mode'));
     } else {
       document.body.classList.add('light');
       document.body.classList.remove('dark');
-      themeButton.innerText = 'Go Dark';
+      themeButtons.forEach(button => (button.innerText = 'Toggle Dark Mode'));
     }
   }
 
@@ -38,14 +44,16 @@ function themeToggle() {
 
   updateDOM();
 
-  themeButton.addEventListener('click', function () {
-    const currentColorScheme = sessionStorage.getItem('Color Scheme');
-    sessionStorage.setItem(
-      'Color Scheme',
-      currentColorScheme === 'light' ? 'dark' : 'light',
-    );
-    updateDOM();
-  });
+  themeButtons.forEach(button =>
+    button.addEventListener('click', function () {
+      const currentColorScheme = sessionStorage.getItem('Color Scheme');
+      sessionStorage.setItem(
+        'Color Scheme',
+        currentColorScheme === 'light' ? 'dark' : 'light',
+      );
+      updateDOM();
+    }),
+  );
 }
 
 themeToggle();
