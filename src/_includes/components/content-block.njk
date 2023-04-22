@@ -17,7 +17,7 @@
         <p class="meta">{{ props.eyebrow }}</p>
       {% endif %}
       <p class="headline">{{ props.headline | safe }}</p>
-      <p class="lead">{{ props.blurb }}</p>
+      <p class="lead">{{ props.blurb | safe }}</p>
       <div class="content-block-actions">
         {% if props.primaryCTA.text %}
           <a href="{{ props.primaryCTA.url }}" class="button primary">{{ props.primaryCTA.text }}</a>

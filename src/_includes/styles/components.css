@@ -125,11 +125,8 @@ a {
 /* -------------------------------------- */
 
 .content-block {
-  /* background: pink; */
-  min-height: 60vh;
-  /* outline: 1px solid red; */
+  min-height: 58vh;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
 }
 
@@ -138,7 +135,6 @@ a {
 }
 .content-block-container {
   display: grid;
-  gap: 1.5rem;
   max-width: var(--site-width);
   margin: 0 auto;
   padding: 2rem var(--container-padding);
@@ -152,6 +148,7 @@ a {
 
 .content-block .lead {
   color: var(--content-block-text-color);
+  margin: 1rem 0 1.75rem;
 }
 
 .content-block-actions {
