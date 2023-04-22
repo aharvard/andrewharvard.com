@@ -31,6 +31,15 @@
 .detail-aside {
 }
 
+.detail-aside-item {
+}
+
+.detail-aside-item-label {
+}
+
+.detail-aside-item-value {
+}
+
 @media (min-width: 600px) {
   .detail-body {
     grid-template-columns: 20vw 1fr;
@@ -38,7 +47,7 @@
   .detail-aside {
     position: sticky;
     align-self: flex-start;
-    top: 1rem;
+    top: 3rem;
   }
 }
 
@@ -46,7 +55,9 @@
   aspect-ratio: 1 / 1;
   overflow: hidden;
   width: 80%;
+  max-width: 200px;
   border-radius: var(--border-radius);
+  margin-bottom: 1.75rem;
 }
 
 .detail-aside-image-wrapper img {
@@ -63,11 +74,11 @@
   max-width: 70ch;
 }
 
-.detail-content h2,
-.detail-content h3,
-.detail-content h4,
-.detail-content h5,
-.detail-content h6 {
+.detail-content * + h2,
+.detail-content * + h3,
+.detail-content * + h4,
+.detail-content * + h5,
+.detail-content * + h6 {
   margin-top: 3rem;
   margin-bottom: 1rem;
   color: var(--detail-content-heading-color);
@@ -91,7 +102,7 @@
   width: 100%;
   height: 100%;
   border: 1px solid var(--img-border-color);
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   background-color: var(--img-border-color);
 }
 
@@ -101,8 +112,8 @@
 
 .video-wrapper iframe {
   border: 1px solid var(--img-border-color);
-  border-radius: 10px;
-  /* overflow: hidden; */
+  border-radius: var(--border-radius);
+
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
@@ -195,11 +206,14 @@
 }
 
 .portfolio-heading {
-  padding: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-right: 2rem;
+  padding-left: 0.75rem;
   bottom: 0;
   left: 0;
   right: 0;
-  top: 0;
+  /* top: 0; */
   display: block;
   position: absolute;
   display: grid;
@@ -208,6 +222,6 @@
   text-shadow: var(--portfolio-link-heading-shadow);
   line-height: 1.2;
   font-size: 1.25rem;
-  padding-right: 2em;
   z-index: 1;
+  background: var(--portfolio-link-heading-background);
 }

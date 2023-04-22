@@ -1,4 +1,6 @@
+{% import "../components/meta-item.njk" as m  %}
 {% extends "./base.njk" %}
+
 {% block content %}
   <div class="detail">
     <h1 class="headline">{{ title }}</h1>
@@ -11,36 +13,11 @@
             </div>
           </div>
         {% endif %}
-        {% if date %}
-          <div class="detail-aside-item">
-            <span class="detail-aside-item-label">Date</span>
-            <span class="detail-aside-item-value">{{ date | asPostDate }}</span>
-          </div>
-        {% endif %}
-        {% if company %}
-          <div class="detail-aside-item">
-            <span class="detail-aside-item-label">Company</span>
-            <span class="detail-aside-item-value">{{ company }}</span>
-          </div>
-        {% endif %}
-        {% if for %}
-          <div class="detail-aside-item">
-            <span class="detail-aside-item-label">For</span>
-            <span class="detail-aside-item-value">{{ for }}</span>
-          </div>
-        {% endif %}
-        {% if role %}
-          <div class="detail-aside-item">
-            <span class="detail-aside-item-label">Role</span>
-            <span class="detail-aside-item-value">{{ role }}</span>
-          </div>
-        {% endif %}
-        {% if school %}
-          <div class="detail-aside-item">
-            <span class="detail-aside-item-label">School</span>
-            <span class="detail-aside-item-value">{{ school }}</span>
-          </div>
-        {% endif %}
+        {{ m.metaItem({label: 'date', value: date | asPostDate}) if date }}
+        {{ m.metaItem({label: 'Company', value: company}) if company }}
+        {{ m.metaItem({label: 'For', value: for}) if for }}
+        {{ m.metaItem({label: 'Role', value: role}) if role }}
+        {{ m.metaItem({label: 'Schoool', value: school}) if school }}
       </aisde>
       <div class="detail-content">
         {{ content | safe }}

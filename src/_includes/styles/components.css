@@ -168,3 +168,15 @@ a {
 .footer {
   padding: 2rem 0;
 }
+
+/* -------------------------------------- */
+/* ------------  Meta Item  ------------- */
+/* -------------------------------------- */
+
+.meta-item {
+  margin-bottom: 1rem;
+}
+
+.meta-item-label {
+  margin-bottom: 0.25rem;
+}

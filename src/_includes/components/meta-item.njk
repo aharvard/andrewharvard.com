@@ -1,0 +1,9 @@
+{% macro metaItem(props = {
+  label: "",
+  value: ""
+}) %}
+  <div class="meta-item">
+    <div class="meta meta-item-label">{{ props.label }}</div>
+    <div class="body-2 meta-item-value">{{ props.value }}</div>
+  </div>
+{% endmacro %}
