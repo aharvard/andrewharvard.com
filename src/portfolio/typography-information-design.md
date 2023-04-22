@@ -1,6 +1,6 @@
 ---
 layout: 'layouts/detail.njk'
-title: 'Typography and Information Design'
+title: 'Typography & Information Design'
 date: 2011-03-01
 school: SCAD Atlanta
 role: Student
