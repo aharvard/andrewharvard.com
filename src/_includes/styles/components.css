@@ -176,4 +176,5 @@ a {
 
 .meta-item-label {
   margin-bottom: 0.25rem;
+  color: var(--meta-item-label-color);
 }
