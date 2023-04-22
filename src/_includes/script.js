@@ -6,7 +6,8 @@ function themeToggle() {
   const themeButton = document.createElement('button');
   themeButton.classList.add('primary');
   const footer = document.querySelector('footer');
-  footer.insertAdjacentElement('beforeend', themeButton);
+  const footerToggleElement = footer.querySelector('#footerColorModeToggle');
+  footerToggleElement.insertAdjacentElement('beforeend', themeButton);
 
   function updateDOM() {
     if (sessionStorage.getItem('Color Scheme') == 'dark') {

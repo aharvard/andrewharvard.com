@@ -166,6 +166,47 @@ a {
   padding: 2rem 0;
 }
 
+.footer-wrapper {
+  max-width: var(--site-width);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+.footer-content-box {
+  display: grid;
+  gap: 1px;
+  background: var(--text-color);
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--text-color);
+  grid-template-areas:
+    'name name name name toggle'
+    'social social site site site';
+}
+
+.footer-content-item {
+  background: var(--background-color);
+  padding: 1rem;
+  display: grid;
+  place-content: center flex-start;
+  text-align: left;
+}
+
+#footerName {
+  grid-area: name;
+}
+
+#footerColorModeToggle {
+  grid-area: toggle;
+}
+
+#footerSocial {
+  grid-area: social;
+}
+
+#footerSite {
+  grid-area: site;
+}
+
 /* -------------------------------------- */
 /* ------------  Meta Item  ------------- */
 /* -------------------------------------- */
