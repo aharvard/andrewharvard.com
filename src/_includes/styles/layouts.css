@@ -30,15 +30,7 @@
 
 .detail-aside {
   margin-top: 0.4rem;
-}
-
-.detail-aside-item {
-}
-
-.detail-aside-item-label {
-}
-
-.detail-aside-item-value {
+  margin-bottom: 1.2rem;
 }
 
 @media (min-width: 600px) {
