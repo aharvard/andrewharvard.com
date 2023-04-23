@@ -1,13 +1,13 @@
-{% import "components/content-block.njk" as m  %}
+{% import "components/content-block.njk" as m %}
+{% import "components/portfolio-tile.njk" as n %}
 {% extends "layouts/base.njk" %}
-
 {% block designSystem %}
   <div class="design-system-container">
     <h1 class="lead">andrewharvard.com design system</h1>
     <div class="design-system-container-item" data-title="Header">
       {% include "components/header.njk" %}
     </div>
-    <div class="design-system-container-item" data-title="Header">
+    <div class="design-system-container-item" data-title="Footer">
       {% include "components/footer.njk" %}
     </div>
     <div class="design-system-container-item" data-title="Content Block: Example A">
@@ -35,45 +35,72 @@
         }
         }) }}
     </div>
-    <div class="design-system-container-item" data-title=".headline">
+    <div class="design-system-container-item" data-title="Portfolio Tiles">
+      <div class="portfolio-tile-grid">
+        {{ n.portfolioTile({
+                url: "item.url",
+                ariaLabel: "item.data.title",
+                imgSrc: "https://source.unsplash.com/random/?Cat&1",
+                title: "item.data.title"
+               }) }}
+        {{ n.portfolioTile({
+                url: "item.url",
+                ariaLabel: "item.data.title",
+                imgSrc: "https://source.unsplash.com/random/?Cat&2",
+                title: "item.data.title"
+               }) }}
+        {{ n.portfolioTile({
+                url: "item.url",
+                ariaLabel: "item.data.title",
+                imgSrc: "https://source.unsplash.com/random/?Cat&3",
+                title: "item.data.title"
+               }) }}
+        {{ n.portfolioTile({
+                url: "item.url",
+                ariaLabel: "item.data.title",
+                imgSrc: "https://source.unsplash.com/random/?Cat&4",
+                title: "item.data.title"
+               }) }}
+      </div>
+    </div>
+    <div class="design-system-container-item padded" data-title=".headline">
       <h2 class="headline">Headline</h2>
     </div>
-    <div class="design-system-container-item" data-title=".heading">
+    <div class="design-system-container-item padded" data-title=".heading">
       <h2 class="heading">Heading</h2>
     </div>
-    <div class="design-system-container-item" data-title=".meta">
+    <div class="design-system-container-item padded" data-title=".meta">
       <p class="meta">meta</p>
     </div>
-    <div class="design-system-container-item" data-title=".lead">
+    <div class="design-system-container-item padded" data-title=".lead">
       <p class="lead">
-      Lead - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working at
-      the intersection of design and technology.
-    </p>
+        Lead - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working at
+        the intersection of design and technology.
+      </p>
     </div>
-    <div class="design-system-container-item" data-title=".body-1">
+    <div class="design-system-container-item padded" data-title=".body-1">
       <p class="body-1">
-      Body 1 - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working
-      at the intersection of design and technology.
-    </p>
+        Body 1 - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working
+        at the intersection of design and technology.
+      </p>
     </div>
-    <div class="design-system-container-item" data-title=".body-2">
+    <div class="design-system-container-item padded" data-title=".body-2">
       <p class="body-2">
-      Body 2 - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working
-      at the intersection of design and technology.
-    </p>
+        Body 2 - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working
+        at the intersection of design and technology.
+      </p>
     </div>
-    <div class="design-system-container-item" data-title=".body-3">
+    <div class="design-system-container-item padded" data-title=".body-3">
       <p class="body-3">
-      Body 3 - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working
-      at the intersection of design and technology.
-    </p>
+        Body 3 - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working
+        at the intersection of design and technology.
+      </p>
     </div>
-    <div class="design-system-container-item" data-title="Button: Primary">
+    <div class="design-system-container-item padded" data-title="Button: Primary">
       <button class="primary">Primary button</button>
     </div>
-    <div class="design-system-container-item" data-title="Button: Secondary">
+    <div class="design-system-container-item padded" data-title="Button: Secondary">
       <button class="secondary">Secondary button</button>
     </div>
-
   </div>
 {% endblock %}

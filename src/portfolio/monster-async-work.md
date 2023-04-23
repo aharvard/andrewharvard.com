@@ -8,6 +8,8 @@ role: Principal UX Engineer
 thumbnail:
   image: '/img/monster-async-work/thumb.jpg'
   imageAlt: ''
+tags:
+  - featured
 ---
 
 At a globally distributed company like Monster, a Slack message is not always the best way to communicate nuance and seek feedback. Occasionally, I use Loom to create videos to demo work and ask questions. Below are some examples of how I like to go about communicating asynchronously.

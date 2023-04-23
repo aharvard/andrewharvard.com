@@ -1,8 +1,7 @@
-{% import "components/content-block.njk" as m  %}
+{% import "components/content-block.njk" as m %}
+{% import "components/portfolio-tile.njk" as n %}
 {% extends "layouts/base.njk" %}
-
 {% block content %}
-
   {{ m.contentBlock({
         headline: "Hi there! I’m&nbsp;Andrew.", 
         blurb: "I have over a decade of experience in design systems, prototyping, and UI development. I'm most effective when I can work at the intersection of design and technology",
@@ -15,7 +14,17 @@
           url: "/about"
         }
         }) }}
-
+  <div class="portfolio-tile-grid">
+    <h2 class="heading">Featured work</h2>
+    {% for item in collections.featured %}
+      {{ n.portfolioTile({
+                url: item.url,
+                ariaLabel: item.data.title,
+                imgSrc: item.data.thumbnail.image,
+                title: item.data.title
+               }) }}
+    {% endfor %}
+  </div>
   {{ m.contentBlock({
         eyebrow: "Featured case study",
         headline: "Engineering the new Monster Job View", 
@@ -25,5 +34,4 @@
           url: "/portfolio/monster-job-view/"
         }
         }) }}
-
 {% endblock %}

@@ -20,15 +20,13 @@ I led the design and UI development of a website data journalists used to explor
 
 ![](/img/data-journalism-ux-assets/02@2x.jpg)
 
-![](/img/data-journalism-ux-assets/03@2x.jpg)
-
 ## Site Wireframes
-
-![](/img/data-journalism-ux-assets/04@2x.jpg)
 
 ![](/img/data-journalism-ux-assets/06@2x.jpg)
 
 ![](/img/data-journalism-ux-assets/07@2x.jpg)
+
+![](/img/data-journalism-ux-assets/04@2x.jpg) ![](/img/data-journalism-ux-assets/03@2x.jpg)
 
 ## Production Site
 

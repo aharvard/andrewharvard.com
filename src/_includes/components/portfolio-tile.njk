@@ -1,0 +1,13 @@
+{% macro portfolioTile(props={
+    url:"/",
+    ariaLabel:"",
+    imgSrc:"",
+    tilte:""
+}) %}
+    <a href="{{ props.url }}" class="portfolio-link" aria-label="{{ props.title }}">
+        <div class="portfolio-image-wrapper">
+            <img class="portfolio-image" src="{{ props.imgSrc }}" alt=""/>
+        </div>
+        <h2 class="heading portfolio-heading">{{ props.title }}</h2>
+    </a>
+{% endmacro %}

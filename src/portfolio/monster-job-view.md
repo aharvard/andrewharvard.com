@@ -8,6 +8,8 @@ role: Principal UX Engineer
 thumbnail:
   image: '/img/monster-job-view/thumb.jpg'
   imageAlt: ''
+tags:
+  - featured
 ---
 
 ## Design Prototyping

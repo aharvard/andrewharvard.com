@@ -8,6 +8,8 @@ company: 'Regions Bank'
 thumbnail:
   image: '/img/regions-design-system/16@2x.jpg'
   imageAlt: ''
+tags:
+  - featured
 ---
 
 ## System Foundation and Components

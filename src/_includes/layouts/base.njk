@@ -4,7 +4,6 @@
 {% set componentStyles %}{% include "../styles/components.css" %}{% endset %}
 {% set layoutStyles %}{% include "../styles/layouts.css" %}{% endset %}
 {% set js %}{% include "../script.js" %}{% endset %}
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,7 +23,7 @@
       body.dark {
         {{darkTokens | safe}}
       }
-      @media (prefers-color-scheme: dark) {
+      @media(prefers-color-scheme: dark) {
         body {
           {{darkTokens | safe}}
         }
@@ -35,18 +34,17 @@
     <title>{{ title }}</title>
   </head>
   <body class="light">
-
     {% if '/design-system' not in page.url %}
       {% include "components/header.njk" %}
     {% endif %}
-
     <main>
       {% block content %}{% endblock %}
     </main>
     {% block designSystem %}{% endblock %}
-    {% include "components/footer.njk" %}
+    {% if '/design-system' not in page.url %}
+      {% include "components/footer.njk" %}
+    {% endif %}
     <script>
-      {{ js | jsmin | safe }}
-    </script>
+      {{ js | jsmin | safe }}</script>
   </body>
 </html>

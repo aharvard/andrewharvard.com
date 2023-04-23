@@ -1,17 +1,17 @@
+{% import "../components/portfolio-tile.njk" as m %}
 {% extends "./base.njk" %}
 {% set pageHeaderTitle = title %}
-
 {% block content %}
   <div class="portfolio">
     <h1 class="headline">{{ title }}</h1>
-    <div class="portfolio-grid">
+    <div class="portfolio-tile-grid">
       {% for item in collections.portfolio %}
-        <a href="{{ item.url }}" class="portfolio-link" aria-label="{{ item.data.title }}">
-          <div class="portfolio-image-wrapper">
-            <img class="portfolio-image" src="{{ item.data.thumbnail.image }}" alt="{{ item.data.thumbnail.imageAlt }}"/>
-          </div>
-          <h2 class="heading portfolio-heading">{{ item.data.title }}</h2>
-        </a>
+        {{ m.portfolioTile({
+                url: item.url,
+                ariaLabel: item.data.title,
+                imgSrc: item.data.thumbnail.image,
+                title: item.data.title
+               }) }}
       {% endfor %}
     </div>
   </div>
