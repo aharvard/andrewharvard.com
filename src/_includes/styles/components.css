@@ -190,6 +190,9 @@ a {
   padding: 0 var(--container-padding);
   flex: 1 1 auto;
 }
+.content-block--hero .content-block-container {
+  transform: translateY(-20%);
+}
 
 .content-block .headline {
   max-width: 20ch;
