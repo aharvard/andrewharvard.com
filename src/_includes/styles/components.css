@@ -109,7 +109,6 @@ a {
 .design-system-swatch {
   overflow: hidden;
   box-shadow: 0 0.125rem 0.125rem 0rem rgba(0, 0, 0, 0.33);
-  outline: 1px solid rgba(125, 125, 125, 0.4);
   border-radius: var(--border-radius);
   display: flex;
   align-items: center;
