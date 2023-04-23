@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'The Wave Light'
 date: 2010-12-23
 school: Georgia Tech

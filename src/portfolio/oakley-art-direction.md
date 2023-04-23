@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Oakley Art Direction'
 company: 'Oakley'
 role: 'Concept Designer, Freelance'

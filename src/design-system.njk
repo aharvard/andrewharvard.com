@@ -1,0 +1,190 @@
+{% import "components/content-block.njk" as m %}
+{% import "components/portfolio-tile.njk" as n %}
+{% import "components/meta-item.njk" as o  %}
+
+{% extends "layouts/base.njk" %}
+{% block designSystem %}
+  <div class="design-system-container">
+    <div class="design-system-container-item" data-title="Header">
+      {% include "components/header.njk" %}
+    </div>
+    <h1 class="headline">Design system</h1>
+    <div class="design-system-container-item" data-title="Foundational Colors">
+      <div class="design-system-swatch-container">
+        {% for item in[
+          '--gray-100',
+          '--gray-200',
+          '--gray-300',
+          '--gray-400',
+          '--gray-500',
+          '--gray-600',
+          '--gray-700',
+          '--gray-800',
+          '--gray-900',
+          '--black',
+          '--white'
+        ] %}
+          <div class="design-system-swatch" style="--swatch-color: var({{item}})">
+            <div class="design-system-swatch-color"></div>
+            <div class="design-system-swatch-label">{{item}}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="design-system-container-item" data-title="Tokens">
+      <div class="design-system-swatch-container">
+        {% for item in[
+          '--background-color',
+          '--button-primary-background-color',
+          '--button-primary-border-color',
+          '--button-primary-text-color',
+          '--button-secondary-background-color',
+          '--button-secondary-border-color',
+          '--button-secondary-text-color',
+          '--detail-content-heading-color',
+          '--header-link-active-color',
+          '--header-link-idle-color',
+          '--headline-color',
+          '--img-border-color',
+          '--meta-item-label-color',
+          '--portfolio-link-gradient-overlay',
+          '--portfolio-link-heading-background',
+          '--portfolio-link-heading-color',
+          '--text-color-low-contrast',
+          '--text-color',
+          '--video-gradient-inside',
+          '--video-gradient-outside'
+        ] %}
+          <div class="design-system-swatch" style="--swatch-color: var({{item}})">
+            <div class="design-system-swatch-color"></div>
+            <div class="design-system-swatch-label">{{item}}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="design-system-container-item padded" data-title=".headline">
+      <h2 class="headline">Headline</h2>
+    </div>
+    <div class="design-system-container-item padded" data-title=".heading">
+      <h2 class="heading">Heading</h2>
+    </div>
+    <div class="design-system-container-item padded" data-title=".meta">
+      <p class="meta">meta</p>
+    </div>
+    <div class="design-system-container-item padded" data-title=".lead">
+      <p class="lead">
+        Lead - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working at
+        the intersection of design and technology.
+      </p>
+    </div>
+    <div class="design-system-container-item padded" data-title=".body-1">
+      <p class="body-1">
+        Body 1 - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working
+        at the intersection of design and technology.
+      </p>
+    </div>
+    <div class="design-system-container-item padded" data-title=".body-2">
+      <p class="body-2">
+        Body 2 - I have over a decade of experience in design systems, prototyping, and front-end development. I enjoy working
+        at the intersection of design and technology.
+      </p>
+    </div>
+    <div class="design-system-container-item padded" data-title="Button: Primary">
+      <button class="primary">Primary button</button>
+      <button class="primary small">Primary Small button
+      </button>
+    </div>
+    <div class="design-system-container-item padded" data-title="Button: Secondary">
+      <button class="secondary">Secondary button</button>
+      <button class="secondary small">Secondary Small button
+      </div>
+    </div>
+    <div class="design-system-container-item padded" data-title="Meta Item">
+      {{ o.metaItem({label: 'Meta label', value: "Meta value"}) }}
+    </div>
+    <div class="design-system-container-item" data-title="Content Block: Hero Example">
+      {{ m.contentBlock({
+        type: "hero",
+        headline: "A Catchy Headline", 
+        blurb: "Commodo enim tempor nulla sunt incididunt ex quis eu anim aliquip aute adipisicing.",
+        primaryCTA: { 
+          text: "Primary Action",
+          url: "#"
+        },
+        secondaryCTA: {
+          text: "Secondary Action", 
+          url: "#"
+        }
+        }) }}
+    </div>
+    <div class="design-system-container-item" data-title="Content Block: Defautl Example">
+      {{ m.contentBlock({
+        eyebrow: "Eyebrow", 
+        headline: "Proident commodo veniam elit in magna minim proident ipsum commodo.", 
+        blurb: "Commodo enim tempor nulla sunt incididunt ex quis eu anim aliquip aute adipisicing.",
+        primaryCTA: {
+          text: "Primary Action",
+          url: "#"
+        }
+        }) }}
+    </div>
+    <div class="design-system-container-item" data-title="Portfolio Tiles">
+      <div class="portfolio-tile-grid">
+        {{ n.portfolioTile({
+                url: "item.url",
+                ariaLabel: "item.data.title",
+                imgSrc: "https://source.unsplash.com/random/?Cat&1",
+                title: "item.data.title"
+               }) }}
+        {{ n.portfolioTile({
+                url: "item.url",
+                ariaLabel: "item.data.title",
+                imgSrc: "https://source.unsplash.com/random/?Cat&2",
+                title: "item.data.title"
+               }) }}
+        {{ n.portfolioTile({
+                url: "item.url",
+                ariaLabel: "item.data.title",
+                imgSrc: "https://source.unsplash.com/random/?Cat&3",
+                title: "item.data.title"
+               }) }}
+        {{ n.portfolioTile({
+                url: "item.url",
+                ariaLabel: "item.data.title",
+                imgSrc: "https://source.unsplash.com/random/?Cat&4",
+                title: "item.data.title"
+               }) }}
+      </div>
+    </div>
+    <div class="design-system-container-item" data-title="Portfolio Tiles (Featured Grid)">
+      <div class="portfolio-tile-grid featured">
+        {{ n.portfolioTile({
+                url: "item.url",
+                ariaLabel: "item.data.title",
+                imgSrc: "https://source.unsplash.com/random/?Cat&5",
+                title: "item.data.title"
+               }) }}
+        {{ n.portfolioTile({
+                url: "item.url",
+                ariaLabel: "item.data.title",
+                imgSrc: "https://source.unsplash.com/random/?Cat&6",
+                title: "item.data.title"
+               }) }}
+        {{ n.portfolioTile({
+                url: "item.url",
+                ariaLabel: "item.data.title",
+                imgSrc: "https://source.unsplash.com/random/?Cat&7",
+                title: "item.data.title"
+               }) }}
+        {{ n.portfolioTile({
+                url: "item.url",
+                ariaLabel: "item.data.title",
+                imgSrc: "https://source.unsplash.com/random/?Cat&8",
+                title: "item.data.title"
+               }) }}
+      </div>
+    </div>
+    <div class="design-system-container-item" data-title="Footer">
+      {% include "components/footer.njk" %}
+    </div>
+  {% endblock %}

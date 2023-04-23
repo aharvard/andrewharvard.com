@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Regions Design System'
 date: 2018-10-01
 displayOrder: 1
@@ -8,6 +8,8 @@ company: 'Regions Bank'
 thumbnail:
   image: '/img/regions-design-system/16@2x.jpg'
   imageAlt: ''
+tags:
+  - featured
 ---
 
 ## System Foundation and Components

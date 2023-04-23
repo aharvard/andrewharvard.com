@@ -1,0 +1,18 @@
+{% import "../components/portfolio-tile.njk" as m %}
+{% extends "./base.njk" %}
+
+{% block content %}
+  <div class="portfolio">
+    <h1 class="headline">{{ title }}</h1>
+    <div class="portfolio-tile-grid">
+      {% for item in collections.portfolio %}
+        {{ m.portfolioTile({
+                url: item.url,
+                ariaLabel: item.data.title,
+                imgSrc: item.data.thumbnail.image,
+                title: item.data.title
+               }) }}
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

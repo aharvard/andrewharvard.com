@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Wedding Correspondence'
 for: 'My Wedding'
 role: 'Graphic Designer, Fiancé'

@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Nonprofit Logo and Web Design'
 date: 2015-10-01
 for: '48 in 48'

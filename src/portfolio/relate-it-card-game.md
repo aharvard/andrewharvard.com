@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Relate It Card Game'
 date: 2009-12-01
 displayOrder: 1

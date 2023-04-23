@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: "Intuitive Company's Culture Video"
 date: 2014-12-01
 role: 'Video Editor'

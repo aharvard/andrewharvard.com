@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Cadillac Office Products'
 date: 2009-10-01
 school: Georgia Tech

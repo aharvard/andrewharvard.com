@@ -1,6 +1,6 @@
 ---
-layout: 'layouts/work-item.njk'
-title: 'Monster Job View'
+layout: 'layouts/detail.njk'
+title: 'Engineering the new Monster Job View'
 date: 2023-04-04
 displayOrder: 1
 company: Monster
@@ -8,6 +8,8 @@ role: Principal UX Engineer
 thumbnail:
   image: '/img/monster-job-view/thumb.jpg'
   imageAlt: ''
+tags:
+  - featured
 ---
 
 ## Design Prototyping

@@ -21,6 +21,10 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  eleventyConfig.addCollection('featured', collection =>
+    sortByDisplayOrder(collection.getFilteredByTag('featured')),
+  );
+
   eleventyConfig.addFilter('jsmin', function (code) {
     let minified = Terser.minify(code);
     if (minified.error) {

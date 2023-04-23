@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'The Icecream Scoop'
 date: 2010-04-01
 displayOrder: 1

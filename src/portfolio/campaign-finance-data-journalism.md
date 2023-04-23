@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Campaign Finance Data Journalism'
 date: 2016-05-01
 role: 'UX Engineer'
@@ -10,7 +10,7 @@ thumbnail:
   imageAlt: ''
 ---
 
-I led the design and UI development of a website data journalists used to explore campaign finance for local and notational political campaigns.
+I led the design and UI development of a website data journalists used to explore campaign finance for local and national political campaigns.
 
 ## Visual Style Guide
 
@@ -20,15 +20,13 @@ I led the design and UI development of a website data journalists used to explor
 
 ![](/img/data-journalism-ux-assets/02@2x.jpg)
 
-![](/img/data-journalism-ux-assets/03@2x.jpg)
-
 ## Site Wireframes
-
-![](/img/data-journalism-ux-assets/04@2x.jpg)
 
 ![](/img/data-journalism-ux-assets/06@2x.jpg)
 
 ![](/img/data-journalism-ux-assets/07@2x.jpg)
+
+![](/img/data-journalism-ux-assets/04@2x.jpg) ![](/img/data-journalism-ux-assets/03@2x.jpg)
 
 ## Production Site
 

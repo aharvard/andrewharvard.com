@@ -1,0 +1,47 @@
+{% import "components/content-block.njk" as m %}
+{% import "components/portfolio-tile.njk" as n %}
+{% extends "layouts/base.njk" %}
+{% block content %}
+  {{ m.contentBlock({
+        type: "hero",
+        headline: "Hi there! I’m&nbsp;Andrew.", 
+        blurb: "I have over a decade of experience in design systems, prototyping, and UI development. I'm most effective when I can work at the intersection of design and technology",
+        primaryCTA: { 
+          text: "View my portfolio",
+          url: "/portfolio"
+        },
+        secondaryCTA: {
+          text: "More about me", 
+          url: "/about"
+        }
+        }) }}
+  <div class="portfolio-tile-grid featured">
+    <h2 class="heading">Featured work</h2>
+    {% for item in collections.featured %}
+      {{ n.portfolioTile({
+                url: item.url,
+                ariaLabel: item.data.title,
+                imgSrc: item.data.thumbnail.image,
+                title: item.data.title
+               }) }}
+    {% endfor %}
+  </div>
+  {{ m.contentBlock({
+        eyebrow: "Latest side project",
+        headline: "Critique Cards", 
+        blurb: "Design critiques can be challenging. Next time you're not sure how to ask for feedback or need help guiding a design review, draw a card and start a discussion!",
+        primaryCTA: { 
+          text: "Check it out!",
+          url: "https://critique-cards.netlify.app/"
+        }
+        }) }}
+  {{ m.contentBlock({
+        eyebrow: "Featured case study",
+        headline: "Engineering the new Monster Job View", 
+        blurb: "A case study on building the right thing and building the thing right.",
+        primaryCTA: { 
+          text: "View case study",
+          url: "/portfolio/monster-job-view/"
+        }
+        }) }}
+{% endblock %}

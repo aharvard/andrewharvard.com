@@ -1,0 +1,27 @@
+{% import "../components/meta-item.njk" as m  %}
+{% extends "./base.njk" %}
+
+{% block content %}
+  <div class="detail">
+    <h1 class="headline">{{ title }}</h1>
+    <div class="detail-body">
+      <aisde class="detail-aside">
+        {% if aboutImage %}
+          <div class="detail-aside-item">
+            <div class="detail-aside-image-wrapper">
+              <img src="{{ aboutImage }}" alt="Andrew's headshot"/>
+            </div>
+          </div>
+        {% endif %}
+        {{ m.metaItem({label: 'date', value: date | asPostDate}) if date }}
+        {{ m.metaItem({label: 'Company', value: company}) if company }}
+        {{ m.metaItem({label: 'For', value: for}) if for }}
+        {{ m.metaItem({label: 'Role', value: role}) if role }}
+        {{ m.metaItem({label: 'Schoool', value: school}) if school }}
+      </aisde>
+      <div class="detail-content">
+        {{ content | safe }}
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Bank Website Wireframes'
 date: 2016-05-01
 displayOrder: 1

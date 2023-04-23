@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Round Trip'
 role: 'UX Designer'
 company: 'Intuitive Company'

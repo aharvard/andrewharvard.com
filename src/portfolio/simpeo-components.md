@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Simpeo Components'
 role: 'UX Engineer'
 company: 'Simpeo'
@@ -8,6 +8,8 @@ displayOrder: 1
 thumbnail:
   image: '/img/simpeo-components/thumb@2x.jpg'
   imageAlt: ''
+tags:
+  - featured
 ---
 
 I used Storybook to build a React component library in isolation and integrated it into multiple Simpeo websites.

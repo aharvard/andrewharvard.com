@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/work-item.njk'
+layout: 'layouts/detail.njk'
 title: 'Cell Phone Interaction Design'
 date: 2010-12-01
 displayOrder: 1
