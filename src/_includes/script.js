@@ -8,7 +8,7 @@ function themeToggle() {
   );
   footerToggleElements.forEach(el => {
     const themeButton = document.createElement('button');
-    themeButton.classList.add('primary');
+    themeButton.classList.add('primary', 'small');
     el.insertAdjacentElement('beforeend', themeButton);
   });
 

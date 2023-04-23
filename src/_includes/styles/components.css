@@ -48,6 +48,12 @@ button.secondary {
   border-color: var(--button-primary-border-color);
 }
 
+button.small,
+.button.small {
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+}
+
 a {
   color: var(--interactive-text-color);
   text-decoration-thickness: 1px;
@@ -131,24 +137,24 @@ a {
 /* -------------------------------------- */
 
 .content-block {
-  min-height: 60vh;
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 10vh 0;
 }
 
-.content-block:first-child {
+.content-block--hero {
   min-height: 0;
   padding-bottom: 12vh;
 }
 
 @media (min-width: 600px) {
-  .content-block:first-child {
+  .content-block--hero {
     min-height: 70vh;
     padding-top: 0;
     padding-bottom: 0;
   }
 }
+
 .content-block-container {
   display: grid;
   max-width: var(--site-width);
@@ -227,11 +233,6 @@ a {
 .footer-color-mode-toggle {
   grid-area: toggle;
   place-content: center;
-}
-
-.footer-color-mode-toggle button {
-  font-size: 0.75rem;
-  padding: 0.5rem 0.75rem;
 }
 
 .footer-social {
