@@ -5,7 +5,10 @@
 {% extends "layouts/base.njk" %}
 {% block designSystem %}
   <div class="design-system-container">
-    <h1 class="lead">andrewharvard.com design system</h1>
+    <div class="design-system-container-item" data-title="Header">
+      {% include "components/header.njk" %}
+    </div>
+    <h1 class="headline">Design system</h1>
     <div class="design-system-container-item" data-title="Foundational Colors">
       <div class="design-system-swatch-container">
         {% for item in[
@@ -99,12 +102,6 @@
     <div class="design-system-container-item padded" data-title="Meta Item">
       {{ o.metaItem({label: 'Meta label', value: "Meta value"}) }}
     </div>
-    <div class="design-system-container-item" data-title="Header">
-      {% include "components/header.njk" %}
-    </div>
-    <div class="design-system-container-item" data-title="Footer">
-      {% include "components/footer.njk" %}
-    </div>
     <div class="design-system-container-item" data-title="Content Block: Hero Example">
       {{ m.contentBlock({
         type: "hero",
@@ -187,5 +184,7 @@
                }) }}
       </div>
     </div>
-
+    <div class="design-system-container-item" data-title="Footer">
+      {% include "components/footer.njk" %}
+    </div>
   {% endblock %}
