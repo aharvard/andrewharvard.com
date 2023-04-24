@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/detail.njk'
 title: 'Motion Design Demo Reel'
-date: 2015-10-01
+date: 2011-10-01
 role: 'Motion Designer'
 for: 'Motion Design Work'
 displayOrder: 1
