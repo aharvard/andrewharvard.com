@@ -391,6 +391,7 @@ a {
 
 .portfolio-tile-grid.featured {
   grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 5rem;
 }
 
 .portfolio-tile-grid > h2 {
