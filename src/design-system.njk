@@ -1,7 +1,6 @@
 {% import "components/content-block.njk" as m %}
 {% import "components/portfolio-tile.njk" as n %}
-{% import "components/meta-item.njk" as o  %}
-
+{% import "components/meta-item.njk" as o %}
 {% extends "layouts/base.njk" %}
 {% block designSystem %}
   <div class="design-system-container">
@@ -24,9 +23,9 @@
           '--black',
           '--white'
         ] %}
-          <div class="design-system-swatch" style="--swatch-color: var({{item}})">
+          <div class="design-system-swatch" style="--swatch-color: var({{ item }})">
             <div class="design-system-swatch-color"></div>
-            <div class="design-system-swatch-label">{{item}}</div>
+            <div class="design-system-swatch-label">{{ item }}</div>
           </div>
         {% endfor %}
       </div>
@@ -52,12 +51,11 @@
           '--portfolio-link-heading-color',
           '--text-color-low-contrast',
           '--text-color',
-          '--video-gradient-inside',
-          '--video-gradient-outside'
+          '--video-background'
         ] %}
-          <div class="design-system-swatch" style="--swatch-color: var({{item}})">
+          <div class="design-system-swatch" style="--swatch-color: var({{ item }})">
             <div class="design-system-swatch-color"></div>
-            <div class="design-system-swatch-label">{{item}}</div>
+            <div class="design-system-swatch-label">{{ item }}</div>
           </div>
         {% endfor %}
       </div>

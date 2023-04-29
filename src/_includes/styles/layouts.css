@@ -111,10 +111,7 @@
   height: auto;
   aspect-ratio: 16 / 9;
   margin: 0;
-  background: radial-gradient(
-    var(--video-gradient-inside) 0%,
-    var(--video-gradient-outside) 200%
-  );
+  background: var(--video-background);
   z-index: 1;
 }
 

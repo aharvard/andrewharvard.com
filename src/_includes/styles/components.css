@@ -20,6 +20,7 @@ a,
 .button,
 button {
   transition: all 250ms ease;
+  will-change: transform, opacity;
 }
 a:hover,
 .button:hover,
