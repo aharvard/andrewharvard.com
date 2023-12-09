@@ -5,7 +5,8 @@ description: Senior UX Engineer/Interaction Designer hybrid. Enjoys writing mode
 aboutImage: '/img/gta-headshot-smaller.jpg'
 ---
 
-I work at Monster as a Principal UX Engineer, focusing on design systems, prototyping, and front-end architecture.
+
+I work at Square as a Design Technologist, focusing on creative web development.
 
 I'm happiest working at the intersection of design and engineering while collaborating on a cross-functional team. I enjoy designing in Figma, writing modern CSS, crafting accessible HTML, and coding in TypeScript. Occasionally, I tinker around on CodePen; check out [some of my pens](https://codepen.io/aharvard)!
 
