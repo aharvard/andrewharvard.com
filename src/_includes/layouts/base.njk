@@ -34,16 +34,12 @@
     <title>{{ title }}</title>
   </head>
   <body class="light">
-    {% if '/design-system' not in page.url %}
-      {% include "components/header.njk" %}
-    {% endif %}
+    
     <main>
       {% block content %}{% endblock %}
     </main>
     {% block designSystem %}{% endblock %}
-    {% if '/design-system' not in page.url %}
-      {% include "components/footer.njk" %}
-    {% endif %}
+    
     <script>
       {{ js | jsmin | safe }}</script>
   </body>

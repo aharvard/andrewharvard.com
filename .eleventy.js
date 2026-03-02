@@ -14,17 +14,6 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
-  // Returns work items, sorted by display order
-  eleventyConfig.addCollection('portfolio', collection => {
-    return sortByDisplayOrder(
-      collection.getFilteredByGlob('./src/portfolio/*.md'),
-    );
-  });
-
-  eleventyConfig.addCollection('featured', collection =>
-    sortByDisplayOrder(collection.getFilteredByTag('featured')),
-  );
-
   eleventyConfig.addFilter('jsmin', function (code) {
     let minified = Terser.minify(code);
     if (minified.error) {
